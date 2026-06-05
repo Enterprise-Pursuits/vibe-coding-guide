@@ -37,19 +37,11 @@
     min-height: 100vh;
   }
 
-  /* skip link for keyboard/screen reader users */
   .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: var(--tn-orange);
-    color: white;
-    padding: 8px 16px;
-    font-size: 14px;
-    font-weight: 600;
-    z-index: 9999;
-    border-radius: 0 0 8px 0;
-    text-decoration: none;
+    position: absolute; top: -40px; left: 0;
+    background: var(--tn-orange); color: white;
+    padding: 8px 16px; font-size: 14px; font-weight: 600;
+    z-index: 9999; border-radius: 0 0 8px 0; text-decoration: none;
   }
   .skip-link:focus { top: 0; }
 
@@ -57,234 +49,108 @@
   .site-header {
     background: var(--tn-purple);
     padding: 0.875rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    position: sticky; top: 0; z-index: 100;
   }
-
   .logo-area { display: flex; align-items: center; gap: 12px; }
-
   .logo-mark {
-    width: 38px; height: 38px;
-    background: var(--tn-orange);
-    border-radius: 10px;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 20px; font-weight: 800;
-    color: white; letter-spacing: -1px; flex-shrink: 0;
+    width: 38px; height: 38px; background: var(--tn-orange);
+    border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 800; color: white; letter-spacing: -1px; flex-shrink: 0;
   }
-
   .logo-text { display: flex; flex-direction: column; line-height: 1.1; }
-
-  .logo-text .org {
-    font-size: 13px; font-weight: 700;
-    color: rgba(255,255,255,0.7);
-    letter-spacing: 0.04em; text-transform: uppercase;
-  }
-
+  .logo-text .org { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.7); letter-spacing: 0.04em; text-transform: uppercase; }
   .logo-text .name { font-size: 16px; font-weight: 700; color: white; }
-
-  .header-badge {
-    background: rgba(255,255,255,0.15);
-    color: white; font-size: 12px; font-weight: 500;
-    padding: 5px 12px; border-radius: 99px;
-    border: 1px solid rgba(255,255,255,0.25);
-  }
+  .header-badge { background: rgba(255,255,255,0.15); color: white; font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 99px; border: 1px solid rgba(255,255,255,0.25); }
 
   /* HERO */
   .hero {
-    background: var(--tn-purple);
-    padding: 4rem 2rem 5rem;
-    text-align: center;
-    position: relative; overflow: hidden;
+    background: var(--tn-purple); padding: 4rem 2rem 5rem;
+    text-align: center; position: relative; overflow: hidden;
   }
-
   .hero::before {
-    content: ''; position: absolute;
-    top: -60px; right: -60px;
-    width: 320px; height: 320px;
-    background: var(--tn-orange);
-    border-radius: 50%; opacity: 0.12;
-    pointer-events: none;
-    aria-hidden: true;
+    content: ''; position: absolute; top: -60px; right: -60px;
+    width: 320px; height: 320px; background: var(--tn-orange);
+    border-radius: 50%; opacity: 0.12; pointer-events: none;
   }
-
   .hero::after {
-    content: ''; position: absolute;
-    bottom: -80px; left: -80px;
-    width: 400px; height: 400px;
-    background: var(--tn-teal);
-    border-radius: 50%; opacity: 0.10;
-    pointer-events: none;
+    content: ''; position: absolute; bottom: -80px; left: -80px;
+    width: 400px; height: 400px; background: var(--tn-teal);
+    border-radius: 50%; opacity: 0.10; pointer-events: none;
   }
-
   .hero-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
-
   .age-pill {
     display: inline-flex; align-items: center; gap: 6px;
     background: var(--tn-orange); color: white;
-    font-size: 13px; font-weight: 600;
-    padding: 6px 16px; border-radius: 99px; margin-bottom: 1.5rem;
+    font-size: 13px; font-weight: 600; padding: 6px 16px; border-radius: 99px; margin-bottom: 1.5rem;
   }
-
-  .hero h1 {
-    font-size: clamp(2.2rem, 6vw, 3.5rem);
-    font-weight: 800; color: white;
-    line-height: 1.1; margin-bottom: 1rem;
-  }
-
+  .hero h1 { font-size: clamp(2.2rem, 6vw, 3.5rem); font-weight: 800; color: white; line-height: 1.1; margin-bottom: 1rem; }
   .hero h1 em { font-style: normal; color: var(--tn-yellow); }
-
-  .hero-sub {
-    font-size: 1.1rem; color: rgba(255,255,255,0.75);
-    max-width: 520px; margin: 0 auto 2rem; line-height: 1.7;
-  }
-
-  .hero-meta {
-    display: flex; align-items: center;
-    justify-content: center; gap: 1.5rem; flex-wrap: wrap;
-  }
-
-  .hero-meta-item {
-    display: flex; align-items: center; gap: 6px;
-    font-size: 13px; color: rgba(255,255,255,0.65);
-  }
+  .hero-sub { font-size: 1.1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto 2rem; line-height: 1.7; }
+  .hero-meta { display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+  .hero-meta-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: rgba(255,255,255,0.65); }
 
   /* SECTIONS */
   .section { max-width: 780px; margin: 0 auto; padding: 3rem 1.5rem; }
-
   .section-label {
     display: flex; align-items: center; gap: 10px;
-    font-size: 11px; font-weight: 700;
-    letter-spacing: 0.12em; text-transform: uppercase;
-    color: var(--tn-purple); margin-bottom: 0.75rem;
+    font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--tn-purple); margin-bottom: 0.75rem;
   }
-
-  .section-label::after {
-    content: ''; flex: 1; height: 1px; background: var(--tn-border);
-  }
-
+  .section-label::after { content: ''; flex: 1; height: 1px; background: var(--tn-border); }
   .section-title { font-size: 1.75rem; font-weight: 800; color: var(--tn-dark); margin-bottom: 0.5rem; }
   .section-desc { font-size: 1rem; color: var(--tn-gray); margin-bottom: 2rem; max-width: 560px; }
 
-  /* ADDIE BANNER */
-  .addie-banner {
-    background: var(--tn-dark);
-    border-radius: var(--radius-lg);
-    padding: 2rem; margin-bottom: 2.5rem;
-  }
-
-  .addie-banner-title {
-    font-size: 12px; font-weight: 700;
-    letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--tn-teal); margin-bottom: 1rem;
-  }
-
-  .addie-phases { display: flex; gap: 0; position: relative; }
-
-  .addie-phase { flex: 1; text-align: center; position: relative; }
-
-  .addie-phase:not(:last-child)::after {
-    content: '\2192';
-    position: absolute; right: -10px; top: 50%;
-    transform: translateY(-50%);
-    color: rgba(255,255,255,0.3); font-size: 18px; z-index: 2;
-  }
-
-  .addie-dot {
-    width: 44px; height: 44px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 15px; font-weight: 800; margin: 0 auto 8px;
-  }
-
-  .addie-phase-name {
-    font-size: 11px; font-weight: 600;
-    color: rgba(255,255,255,0.55);
-    text-transform: uppercase; letter-spacing: 0.06em;
-  }
-
-  /* LEARNING PRINCIPLES CARDS */
-  .lp-grid {
+  /* HOW IT WORKS TILES (student-facing intro) */
+  .how-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 10px; margin-top: 1.5rem; margin-bottom: 2rem;
+    gap: 10px; margin-bottom: 2rem;
   }
-
-  .lp-card {
+  .how-card {
     background: white; border: 1.5px solid var(--tn-border);
-    border-radius: var(--radius); padding: 1rem;
+    border-radius: var(--radius); padding: 1.1rem;
   }
+  .how-card-icon { font-size: 24px; margin-bottom: 8px; }
+  .how-card-title { font-size: 14px; font-weight: 700; color: var(--tn-dark); margin-bottom: 4px; }
+  .how-card-desc { font-size: 13px; color: var(--tn-gray); line-height: 1.55; }
 
-  .lp-card-icon { font-size: 22px; margin-bottom: 8px; }
-  .lp-card-title { font-size: 13px; font-weight: 700; color: var(--tn-dark); margin-bottom: 4px; }
-  .lp-card-desc { font-size: 12px; color: var(--tn-gray); line-height: 1.5; }
-
-  /* COGNITIVE LOAD STRIP */
-  .cl-strip {
-    background: #FFFBEA;
-    border: 1.5px solid #FFD600;
-    border-radius: var(--radius-lg);
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+  /* OPEN INSTRUCTION */
+  .open-instruction {
+    background: white; border: 1.5px solid var(--tn-border);
+    border-radius: var(--radius); padding: 0.875rem 1.25rem;
+    margin-bottom: 1.25rem; font-size: 14px; color: var(--tn-gray);
+    line-height: 1.6;
   }
-
-  .cl-strip-title {
-    font-size: 13px; font-weight: 700;
-    color: #7A5F00; text-transform: uppercase;
-    letter-spacing: 0.08em; margin-bottom: 1rem;
+  .mock-toggle {
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--tn-purple); color: white;
+    display: inline-flex; align-items: center; justify-content: center;
+    font-size: 16px; font-weight: 700;
+    cursor: default; user-select: none;
+    vertical-align: middle; margin: 0 4px;
   }
-
-  .cl-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-  }
-
-  .cl-item {
-    display: flex; align-items: flex-start; gap: 10px;
-  }
-
-  .cl-dot {
-    width: 8px; height: 8px; border-radius: 50%;
-    background: var(--tn-orange); flex-shrink: 0; margin-top: 6px;
-  }
-
-  .cl-text { font-size: 13px; color: #5A4700; line-height: 1.55; }
-  .cl-text strong { color: #3D2E00; font-weight: 600; }
 
   /* STEPS */
   .steps-list { display: flex; flex-direction: column; gap: 12px; }
-
   .step-card {
-    background: white;
-    border-radius: var(--radius-lg);
-    border: 1.5px solid var(--tn-border);
-    overflow: hidden;
+    background: white; border-radius: var(--radius-lg);
+    border: 1.5px solid var(--tn-border); overflow: hidden;
     transition: box-shadow 0.2s, border-color 0.2s;
   }
-
   .step-card:hover { box-shadow: var(--shadow); }
   .step-card.open { border-color: var(--tn-purple); }
-
   .step-header {
     display: flex; align-items: center; gap: 14px;
-    padding: 1.25rem 1.5rem;
-    cursor: pointer; user-select: none;
+    padding: 1.25rem 1.5rem; cursor: pointer; user-select: none;
   }
-
   .step-badge {
     width: 40px; height: 40px; border-radius: 10px;
     display: flex; align-items: center; justify-content: center;
-    font-family: var(--font-mono); font-size: 14px;
-    font-weight: 500; flex-shrink: 0;
+    font-family: var(--font-mono); font-size: 14px; font-weight: 500; flex-shrink: 0;
   }
-
   .step-info { flex: 1; }
   .step-title { font-size: 1rem; font-weight: 700; color: var(--tn-dark); line-height: 1.3; }
-  .step-subtitle { font-size: 12px; color: var(--tn-gray); margin-top: 2px; }
-
   .step-toggle {
     width: 28px; height: 28px; border-radius: 50%;
     background: var(--tn-gray-light);
@@ -292,217 +158,161 @@
     font-size: 18px; color: var(--tn-gray); flex-shrink: 0;
     transition: transform 0.25s, background 0.2s;
   }
-
   .step-card.open .step-toggle { transform: rotate(45deg); background: var(--tn-purple); color: white; }
-
   .step-body { display: none; padding: 0 1.5rem 1.5rem; border-top: 1px solid var(--tn-border); }
   .step-card.open .step-body { display: block; }
   .step-body-inner { padding-top: 1.25rem; }
-
   .step-body p { font-size: 0.95rem; color: #374151; line-height: 1.75; margin-bottom: 1rem; }
 
-  .principle-tag {
-    display: inline-flex; align-items: center; gap: 5px;
-    font-size: 11px; font-weight: 600;
-    padding: 4px 10px; border-radius: 99px;
+  /* GLOSSARY BUTTONS */
+  .glossary-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1rem; }
+  .glossary-btn {
+    font-family: var(--font-main); font-size: 12px; font-weight: 600;
+    padding: 5px 12px; border-radius: 99px;
     background: #EEE9FC; color: var(--tn-purple);
-    margin: 0 4px 8px 0;
-    text-transform: uppercase; letter-spacing: 0.05em;
+    border: 1.5px solid #C9B8F5; cursor: pointer;
+    transition: background 0.15s; position: relative;
   }
-
-  .prompt-box {
-    background: var(--tn-dark);
-    border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 10px;
+  .glossary-btn:hover { background: #D8CFFB; }
+  .glossary-btn:focus-visible { outline: 3px solid var(--tn-orange); outline-offset: 2px; }
+  .glossary-popup {
+    display: none; position: absolute; bottom: calc(100% + 8px); left: 0;
+    background: var(--tn-dark); color: white; font-size: 13px; font-weight: 400;
+    line-height: 1.55; padding: 10px 14px; border-radius: 10px;
+    width: 240px; z-index: 50; box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    text-align: left;
   }
-
-  .prompt-box-label {
-    font-family: var(--font-mono);
-    font-size: 10px; letter-spacing: 0.1em;
-    text-transform: uppercase; margin-bottom: 6px;
+  .glossary-popup::after {
+    content: ''; position: absolute; top: 100%; left: 16px;
+    border: 6px solid transparent; border-top-color: var(--tn-dark);
   }
+  .glossary-btn.active .glossary-popup { display: block; }
 
+  /* STUDENT HINT */
+  .hint-box {
+    background: #E8F9F5; border-left: 4px solid var(--tn-teal);
+    border-radius: 0 10px 10px 0; padding: 0.875rem 1rem;
+    margin-top: 1rem;
+  }
+  .hint-box-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--tn-teal); margin-bottom: 4px;
+  }
+  .hint-box p { font-size: 14px; color: #0E4F42; line-height: 1.6; margin: 0; }
+
+  /* STUDENT TRY THIS */
+  .try-box {
+    background: #EEF9FF; border-left: 4px solid #3B9EDB;
+    border-radius: 0 10px 10px 0; padding: 0.875rem 1rem;
+    margin-top: 1rem;
+  }
+  .try-box-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; color: #1E6FA5; margin-bottom: 4px;
+  }
+  .try-box p { font-size: 14px; color: #0E3D5E; line-height: 1.6; margin: 0; }
+  .prompt-box { background: var(--tn-dark); border-radius: 10px; padding: 1rem 1.25rem; margin-bottom: 10px; }
+  .prompt-box-label { font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
   .prompt-box-label.good { color: var(--tn-teal); }
   .prompt-box-label.bad { color: #F87171; }
   .prompt-box-label.example { color: #FF8C4B; }
+  .prompt-box-text { font-family: var(--font-mono); font-size: 13px; color: rgba(255,255,255,0.88); line-height: 1.65; }
 
-  .prompt-box-text {
-    font-family: var(--font-mono);
-    font-size: 13px; color: rgba(255,255,255,0.88); line-height: 1.65;
-  }
-
-  .idea-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 8px; margin-top: 0.75rem;
-  }
-
+  /* IDEAS GRID */
+  .idea-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; margin-top: 0.75rem; }
   .idea-tile {
-    background: var(--tn-gray-light);
-    border: 1.5px solid var(--tn-border);
-    border-radius: var(--radius); padding: 0.875rem;
-    cursor: pointer;
+    background: var(--tn-gray-light); border: 1.5px solid var(--tn-border);
+    border-radius: var(--radius); padding: 0.875rem; cursor: pointer;
     transition: border-color 0.2s, background 0.2s;
   }
-
-  .idea-tile:hover, .idea-tile:focus {
-    border-color: var(--tn-purple); background: #EEE9FC; outline: none;
-  }
-
+  .idea-tile:hover, .idea-tile:focus { border-color: var(--tn-purple); background: #EEE9FC; outline: none; }
   .idea-tile:focus-visible { outline: 3px solid var(--tn-orange); outline-offset: 2px; }
-
   .idea-tile-icon { font-size: 22px; margin-bottom: 6px; }
   .idea-tile-name { font-size: 13px; font-weight: 600; color: var(--tn-dark); }
   .idea-tile-desc { font-size: 11px; color: var(--tn-gray); margin-top: 2px; line-height: 1.4; }
 
+  /* TOOLS */
   .tool-pills { display: flex; gap: 8px; flex-wrap: wrap; margin: 0.75rem 0; }
-
   .tool-pill {
-    font-size: 13px; font-weight: 600;
-    padding: 6px 14px; border-radius: 99px;
-    border: 1.5px solid var(--tn-border);
-    color: var(--tn-purple); background: white;
-    text-decoration: none;
-    transition: background 0.15s, border-color 0.15s;
+    font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 99px;
+    border: 1.5px solid var(--tn-border); color: var(--tn-purple); background: white;
+    text-decoration: none; transition: background 0.15s, border-color 0.15s;
   }
-
   .tool-pill:hover { background: #EEE9FC; border-color: var(--tn-purple); }
   .tool-pill:focus-visible { outline: 3px solid var(--tn-orange); outline-offset: 2px; }
-
-  .tip-bar {
-    background: #FFF3E8;
-    border-left: 4px solid var(--tn-orange);
-    border-radius: 0 10px 10px 0;
-    padding: 0.875rem 1rem; margin-top: 1rem;
-    font-size: 14px; color: #7C3A1A; line-height: 1.6;
-  }
-
-  .tip-bar strong { color: #C44F0E; }
 
   /* DESIGN PROCESS SECTION */
   .design-section { background: var(--tn-purple); padding: 3rem 1.5rem; }
   .design-inner { max-width: 780px; margin: 0 auto; }
-
   .design-section .section-label { color: var(--tn-teal); }
   .design-section .section-label::after { background: rgba(255,255,255,0.15); }
   .design-section .section-title { color: white; }
   .design-section .section-desc { color: rgba(255,255,255,0.65); }
 
-  /* ADDIE MAP inside design section */
-  .addie-map {
-    background: rgba(255,255,255,0.06);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-radius: var(--radius-lg);
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
+  /* ADDIE BANNER (reviewer section only) */
+  .addie-banner { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-lg); padding: 2rem; margin-bottom: 1.5rem; }
+  .addie-banner-title { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tn-teal); margin-bottom: 1rem; }
+  .addie-phases { display: flex; position: relative; }
+  .addie-phase { flex: 1; text-align: center; position: relative; }
+  .addie-phase:not(:last-child)::after { content: '\2192'; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: rgba(255,255,255,0.3); font-size: 18px; z-index: 2; }
+  .addie-dot { width: 44px; height: 44px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 800; margin: 0 auto 8px; }
+  .addie-phase-name { font-size: 11px; font-weight: 600; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.06em; }
 
-  .addie-map-title {
-    font-size: 11px; font-weight: 700;
-    letter-spacing: 0.1em; text-transform: uppercase;
-    color: var(--tn-yellow); margin-bottom: 1.25rem;
-  }
-
+  /* ADDIE MAP */
+  .addie-map { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1.5rem; }
+  .addie-map-title { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tn-yellow); margin-bottom: 1.25rem; }
   .addie-map-rows { display: flex; flex-direction: column; gap: 10px; }
-
-  .addie-map-row {
-    display: flex; align-items: flex-start; gap: 14px;
-  }
-
-  .addie-map-phase {
-    font-family: var(--font-mono);
-    font-size: 12px; font-weight: 500;
-    color: white;
-    min-width: 80px;
-    padding: 5px 10px;
-    border-radius: 6px;
-    text-align: center;
-    flex-shrink: 0;
-  }
-
-  .addie-map-desc {
-    font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.55;
-    padding-top: 4px;
-  }
-
+  .addie-map-row { display: flex; align-items: flex-start; gap: 14px; }
+  .addie-map-phase { font-family: var(--font-mono); font-size: 12px; font-weight: 500; color: white; min-width: 80px; padding: 5px 10px; border-radius: 6px; text-align: center; flex-shrink: 0; }
+  .addie-map-desc { font-size: 13px; color: rgba(255,255,255,0.7); line-height: 1.55; padding-top: 4px; }
   .addie-map-desc strong { color: white; font-weight: 600; }
 
+  /* LEARNING PRINCIPLES GRID (reviewer section) */
+  .lp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin-bottom: 1.5rem; }
+  .lp-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius); padding: 1rem; }
+  .lp-card-icon { font-size: 22px; margin-bottom: 8px; }
+  .lp-card-title { font-size: 13px; font-weight: 700; color: white; margin-bottom: 4px; }
+  .lp-card-desc { font-size: 12px; color: rgba(255,255,255,0.60); line-height: 1.5; }
+
+  /* L&D INSIGHTS (reviewer section) */
+  .ld-insights { display: flex; flex-direction: column; gap: 10px; margin-bottom: 1.5rem; }
+  .ld-card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: var(--radius); padding: 1rem 1.25rem; }
+  .ld-card-step { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tn-teal); margin-bottom: 4px; }
+  .ld-card-text { font-size: 13px; color: rgba(255,255,255,0.72); line-height: 1.6; }
+  .ld-card-text strong { color: white; font-weight: 600; }
+
+  /* COGNITIVE LOAD STRIP */
+  .cl-strip { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,214,0,0.3); border-radius: var(--radius-lg); padding: 1.5rem; margin-bottom: 1.5rem; }
+  .cl-strip-title { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tn-yellow); margin-bottom: 1rem; }
+  .cl-items { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+  .cl-item { display: flex; align-items: flex-start; gap: 10px; }
+  .cl-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--tn-orange); flex-shrink: 0; margin-top: 6px; }
+  .cl-text { font-size: 13px; color: rgba(255,255,255,0.70); line-height: 1.55; }
+  .cl-text strong { color: white; font-weight: 600; }
+
   /* PROCESS GRID */
-  .process-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-  }
-
-  .process-card {
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: var(--radius-lg); padding: 1.5rem 1.25rem;
-  }
-
-  .process-card-num {
-    font-family: var(--font-mono);
-    font-size: 11px; color: rgba(255,255,255,0.4);
-    letter-spacing: 0.08em; margin-bottom: 0.75rem;
-  }
-
+  .process-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .process-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius-lg); padding: 1.5rem 1.25rem; }
+  .process-card-num { font-family: var(--font-mono); font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 0.08em; margin-bottom: 0.75rem; }
   .process-card-icon { font-size: 32px; margin-bottom: 0.75rem; }
   .process-card-title { font-size: 1rem; font-weight: 700; color: white; margin-bottom: 0.5rem; }
   .process-card-desc { font-size: 13px; color: rgba(255,255,255,0.60); line-height: 1.6; }
-
-  .process-card-question {
-    margin-top: 0.875rem; padding-top: 0.875rem;
-    border-top: 1px solid rgba(255,255,255,0.12);
-    font-size: 12px; font-style: italic;
-    color: var(--tn-yellow); line-height: 1.5;
-  }
-
-  .process-card-tag {
-    display: inline-block;
-    font-size: 10px; font-weight: 700;
-    letter-spacing: 0.07em; text-transform: uppercase;
-    background: rgba(255,255,255,0.12);
-    color: rgba(255,255,255,0.65);
-    padding: 3px 8px; border-radius: 4px;
-    margin-top: 0.5rem;
-  }
-
-  /* ADA card accent */
-  .process-card.ada-card {
-    border-color: var(--tn-teal);
-    background: rgba(0,184,156,0.10);
-  }
+  .process-card-question { margin-top: 0.875rem; padding-top: 0.875rem; border-top: 1px solid rgba(255,255,255,0.12); font-size: 12px; font-style: italic; color: var(--tn-yellow); line-height: 1.5; }
+  .process-card-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.65); padding: 3px 8px; border-radius: 4px; margin-top: 0.5rem; }
+  .process-card.ada-card { border-color: var(--tn-teal); background: rgba(0,184,156,0.10); }
 
   /* FOOTER */
   footer { background: var(--tn-dark); padding: 2.5rem 2rem; text-align: center; }
-
-  .footer-logo {
-    display: flex; align-items: center;
-    justify-content: center; gap: 10px; margin-bottom: 1rem;
-  }
-
-  .footer-logo-mark {
-    width: 32px; height: 32px;
-    background: var(--tn-orange); border-radius: 8px;
-    display: flex; align-items: center; justify-content: center;
-    font-weight: 800; font-size: 16px; color: white;
-  }
-
+  .footer-logo { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 1rem; }
+  .footer-logo-mark { width: 32px; height: 32px; background: var(--tn-orange); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; color: white; }
   .footer-logo-text { font-size: 15px; font-weight: 700; color: rgba(255,255,255,0.7); }
-
   .footer-author { font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 0.75rem; }
   .footer-author strong { color: rgba(255,255,255,0.8); }
-
   .footer-copyright { font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.8; }
-
   .footer-divider { width: 48px; height: 1px; background: rgba(255,255,255,0.12); margin: 1rem auto; }
 
-  /* FOCUS STYLES for ADA keyboard nav */
-  a:focus-visible, button:focus-visible {
-    outline: 3px solid var(--tn-orange);
-    outline-offset: 3px;
-  }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--tn-orange); outline-offset: 3px; }
 
-  /* RESPONSIVE */
   @media (max-width: 540px) {
     .site-header { padding: 0.75rem 1rem; }
     .header-badge { display: none; }
@@ -511,9 +321,9 @@
     .addie-dot { width: 36px; height: 36px; font-size: 12px; }
     .addie-map-row { flex-direction: column; gap: 6px; }
     .addie-map-phase { min-width: unset; width: fit-content; }
+    .glossary-popup { width: 200px; }
   }
 
-  /* HIGH CONTRAST MEDIA QUERY for ADA */
   @media (forced-colors: active) {
     .step-card, .lp-card, .idea-tile { border: 2px solid ButtonText; }
     .step-toggle { border: 1px solid ButtonText; }
@@ -524,7 +334,6 @@
 
 <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<!-- HEADER -->
 <header class="site-header" role="banner">
   <div class="logo-area">
     <div class="logo-mark" aria-hidden="true">T</div>
@@ -536,10 +345,9 @@
   <div class="header-badge" aria-label="Designed for ages 13 to 15">For Ages 13 to 15</div>
 </header>
 
-<!-- HERO -->
 <section class="hero" aria-labelledby="hero-heading">
   <div class="hero-inner">
-    <div class="age-pill" role="note" aria-label="Designed for students ages 13 to 15">
+    <div class="age-pill" role="note">
       <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a5 5 0 1 1 0 10A5 5 0 0 1 12 2zm0 12c-5.33 0-8 2.67-8 4v2h16v-2c0-1.33-2.67-4-8-4z"/></svg>
       Designed for Students Ages 13 to 15
     </div>
@@ -562,153 +370,207 @@
   </div>
 </section>
 
-<!-- MAIN CONTENT -->
 <main id="main-content">
 
 <!-- WHAT IS VIBE CODING -->
 <section class="section" aria-labelledby="intro-heading">
   <div class="section-label" aria-hidden="true">Start here</div>
   <h2 class="section-title" id="intro-heading">Wait, what is vibe coding?</h2>
-  <p class="section-desc">Before you build, here is a quick mental model so you know what you are actually doing.</p>
-
-  <div class="addie-banner" role="region" aria-label="ADDIE instructional design framework overview">
-    <div class="addie-banner-title">How this lesson is designed: the ADDIE framework</div>
-    <div class="addie-phases" role="list" aria-label="ADDIE phases">
-      <div class="addie-phase" role="listitem">
-        <div class="addie-dot" style="background:#5C1AB8; color:#D4BAFF;" aria-hidden="true">A</div>
-        <div class="addie-phase-name">Analyze</div>
-      </div>
-      <div class="addie-phase" role="listitem">
-        <div class="addie-dot" style="background:#F5631A; color:#FFD6C0;" aria-hidden="true">D</div>
-        <div class="addie-phase-name">Design</div>
-      </div>
-      <div class="addie-phase" role="listitem">
-        <div class="addie-dot" style="background:#00B89C; color:#B3EFE6;" aria-hidden="true">D</div>
-        <div class="addie-phase-name">Develop</div>
-      </div>
-      <div class="addie-phase" role="listitem">
-        <div class="addie-dot" style="background:#FFD600; color:#7A6200;" aria-hidden="true">I</div>
-        <div class="addie-phase-name">Implement</div>
-      </div>
-      <div class="addie-phase" role="listitem">
-        <div class="addie-dot" style="background:#EC4899; color:#FFD6EE;" aria-hidden="true">E</div>
-        <div class="addie-phase-name">Evaluate</div>
-      </div>
-    </div>
-  </div>
+  <p class="section-desc">Here is a quick picture of what you are about to do and what makes it different from traditional coding.</p>
 
   <p style="font-size:1rem; color:#374151; line-height:1.75; margin-bottom:1rem;">
     <strong style="color:var(--tn-purple);">Vibe coding</strong> means describing what you want to build in plain language and letting an AI write the actual code. You are the director. The AI is the crew. Your job is to have a clear vision, keep giving feedback, and test what gets built until it works the way you imagined.
   </p>
-  <p style="font-size:1rem; color:#374151; line-height:1.75; margin-bottom:0.5rem;">
-    You do not need to memorize syntax. You need to think clearly, describe specifically, and test honestly. Those are real skills that will help you far beyond any single project.
+  <p style="font-size:1rem; color:#374151; line-height:1.75; margin-bottom:1.75rem;">
+    You do not need to memorize any code. You need to think clearly, describe specifically, and test honestly. Those are real skills that will help you far beyond this project.
   </p>
 
-  <h3 style="font-size:1rem; font-weight:700; color:var(--tn-dark); margin: 1.5rem 0 0.5rem;">Why learning is designed this way</h3>
-  <div class="lp-grid" role="list" aria-label="Learning principles">
-    <div class="lp-card" role="listitem">
-      <div class="lp-card-icon" aria-hidden="true">🎯</div>
-      <div class="lp-card-title">Goal-directed</div>
-      <div class="lp-card-desc">You learn more when you are building something you actually care about. The topic matters less than the motivation.</div>
+  <div class="how-grid" role="list" aria-label="How vibe coding works">
+    <div class="how-card" role="listitem">
+      <div class="how-card-icon" aria-hidden="true">💬</div>
+      <div class="how-card-title">You describe it</div>
+      <div class="how-card-desc">Tell the AI what you want in plain English, like texting a friend who can build anything.</div>
     </div>
-    <div class="lp-card" role="listitem">
-      <div class="lp-card-icon" aria-hidden="true">🔁</div>
-      <div class="lp-card-title">Iterative</div>
-      <div class="lp-card-desc">Real learning happens in cycles. Try something, see what breaks, adjust, and try again. Every loop makes you sharper.</div>
+    <div class="how-card" role="listitem">
+      <div class="how-card-icon" aria-hidden="true">🤖</div>
+      <div class="how-card-title">AI writes the code</div>
+      <div class="how-card-desc">The AI turns your words into working code. You do not need to understand every line of it.</div>
     </div>
-    <div class="lp-card" role="listitem">
-      <div class="lp-card-icon" aria-hidden="true">🧠</div>
-      <div class="lp-card-title">Low stakes</div>
-      <div class="lp-card-desc">Bugs are not failures. They are information. Nothing here can break for good, so experiment freely.</div>
+    <div class="how-card" role="listitem">
+      <div class="how-card-icon" aria-hidden="true">👀</div>
+      <div class="how-card-title">You test it</div>
+      <div class="how-card-desc">Run it, poke around, see what works and what does not. Your reaction is the most important part.</div>
     </div>
-    <div class="lp-card" role="listitem">
-      <div class="lp-card-icon" aria-hidden="true">🗣️</div>
-      <div class="lp-card-title">Language first</div>
-      <div class="lp-card-desc">The real skill you are building is clear communication. That transfers to every career, class, and collaboration.</div>
+    <div class="how-card" role="listitem">
+      <div class="how-card-icon" aria-hidden="true">🔧</div>
+      <div class="how-card-title">You improve it</div>
+      <div class="how-card-desc">Tell the AI what to change. Repeat until it looks and works the way you pictured it.</div>
     </div>
   </div>
-
 </section>
 
 <!-- 5-STEP PLAYBOOK -->
 <section class="section" style="padding-top: 0;" aria-labelledby="playbook-heading">
   <div class="section-label" aria-hidden="true">The playbook</div>
   <h2 class="section-title" id="playbook-heading">5 steps to your first build</h2>
-  <p class="section-desc">Tap each step to open it. Work through them in order the first time around.</p>
+
+  <div class="open-instruction" role="note" aria-label="How to use these steps">
+    <span>Click the <span class="mock-toggle" aria-hidden="true">+</span> button on any step to open it. Work through them in order on your first project.</span>
+  </div>
 
   <div class="steps-list" id="steps" role="list" aria-label="5-step vibe coding process"></div>
 </section>
 
 </main>
 
-<!-- DESIGN PROCESS SECTION -->
+<!-- DESIGN PROCESS + REVIEWER SECTION -->
 <section class="design-section" aria-labelledby="design-heading">
   <div class="design-inner">
-    <div class="section-label" aria-hidden="true">Design thinking</div>
-    <h2 class="section-title" id="design-heading">The design process: a quick reference</h2>
-    <p class="section-desc">Every great app starts with thinking before building. These questions and the ADDIE framework map will help you plan before you prompt.</p>
+    <div class="section-label" aria-hidden="true">For reviewers and educators</div>
+    <h2 class="section-title" id="design-heading">Design process and instructional notes</h2>
+    <p class="section-desc">This section documents the instructional design decisions behind this resource, the ADDIE framework used to build it, and the learning principles applied at each step.</p>
 
-    <div class="addie-map" role="region" aria-label="ADDIE framework mapped to vibe coding steps">
+    <!-- ADDIE OVERVIEW -->
+    <div class="addie-banner" role="region" aria-label="ADDIE instructional design framework">
+      <div class="addie-banner-title">The ADDIE framework: how this lesson is built</div>
+      <div class="addie-phases" role="list" aria-label="ADDIE phases">
+        <div class="addie-phase" role="listitem">
+          <div class="addie-dot" style="background:#5C1AB8; color:#D4BAFF;" aria-hidden="true">A</div>
+          <div class="addie-phase-name">Analyze</div>
+        </div>
+        <div class="addie-phase" role="listitem">
+          <div class="addie-dot" style="background:#F5631A; color:#FFD6C0;" aria-hidden="true">D</div>
+          <div class="addie-phase-name">Design</div>
+        </div>
+        <div class="addie-phase" role="listitem">
+          <div class="addie-dot" style="background:#00B89C; color:#B3EFE6;" aria-hidden="true">D</div>
+          <div class="addie-phase-name">Develop</div>
+        </div>
+        <div class="addie-phase" role="listitem">
+          <div class="addie-dot" style="background:#FFD600; color:#7A6200;" aria-hidden="true">I</div>
+          <div class="addie-phase-name">Implement</div>
+        </div>
+        <div class="addie-phase" role="listitem">
+          <div class="addie-dot" style="background:#EC4899; color:#FFD6EE;" aria-hidden="true">E</div>
+          <div class="addie-phase-name">Evaluate</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADDIE MAPPED TO STEPS -->
+    <div class="addie-map" role="region" aria-label="ADDIE framework mapped to each step">
       <div class="addie-map-title">ADDIE mapped to this project</div>
       <div class="addie-map-rows">
         <div class="addie-map-row">
           <div class="addie-map-phase" style="background:#5C1AB8;">Analyze</div>
-          <div class="addie-map-desc"><strong>Step 1: Pick your idea.</strong> You identify who the app is for (you!), what problem it solves, and what prior knowledge you are starting with. This is the needs assessment phase.</div>
+          <div class="addie-map-desc"><strong>Step 1: Pick your idea.</strong> The learner identifies who the app is for, what problem it solves, and what prior knowledge they bring. This is the needs assessment phase.</div>
         </div>
         <div class="addie-map-row">
           <div class="addie-map-phase" style="background:#F5631A;">Design</div>
-          <div class="addie-map-desc"><strong>Step 2: Write your prompt.</strong> You translate your idea into a clear blueprint. Objectives, features, and structure are all decided here before a single line of code is written.</div>
+          <div class="addie-map-desc"><strong>Step 2: Write your prompt.</strong> The learner translates their idea into a structured blueprint. Objectives, features, and scope are defined before any code is generated.</div>
         </div>
         <div class="addie-map-row">
           <div class="addie-map-phase" style="background:#00B89C;">Develop</div>
-          <div class="addie-map-desc"><strong>Step 3: Run it.</strong> The AI generates your first working version. This is the production phase. Materials exist, but they have not been tested yet.</div>
+          <div class="addie-map-desc"><strong>Step 3: Run it.</strong> The AI generates the first working version. This is the production phase. Artifacts exist but have not yet been tested or validated.</div>
         </div>
         <div class="addie-map-row">
           <div class="addie-map-phase" style="background:#C48A00;">Implement</div>
-          <div class="addie-map-desc"><strong>Step 4: Iterate.</strong> You put the product in front of real use (yours) and refine it based on what you observe. Feedback loops are the engine of this phase.</div>
+          <div class="addie-map-desc"><strong>Step 4: Iterate.</strong> The learner deploys the product into real use and refines it through observation and feedback. This phase is cyclical by design.</div>
         </div>
         <div class="addie-map-row">
           <div class="addie-map-phase" style="background:#9D174D;">Evaluate</div>
-          <div class="addie-map-desc"><strong>Step 5: Reflect and share.</strong> You assess whether the product met its goals and what you would do differently. Formative evaluation happens throughout; summative evaluation happens here.</div>
+          <div class="addie-map-desc"><strong>Step 5: Reflect and share.</strong> The learner assesses whether the product met its goals. Formative evaluation runs throughout; summative evaluation occurs at this final step.</div>
         </div>
       </div>
     </div>
 
-    <div class="cl-strip" role="region" aria-label="Cognitive load reduction techniques" style="margin-bottom:1.5rem;">
-      <div class="cl-strip-title">Cognitive load reduction: how this resource is designed to help memory retention</div>
+    <!-- LEARNING PRINCIPLES -->
+    <p style="font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--tn-teal); margin-bottom:0.75rem;">Core learning principles applied</p>
+    <div class="lp-grid" role="list" aria-label="Learning principles">
+      <div class="lp-card" role="listitem">
+        <div class="lp-card-icon" aria-hidden="true">🎯</div>
+        <div class="lp-card-title">Goal-directed</div>
+        <div class="lp-card-desc">Learners engage more deeply when the goal is personally meaningful. Self-determination theory supports learner-chosen projects.</div>
+      </div>
+      <div class="lp-card" role="listitem">
+        <div class="lp-card-icon" aria-hidden="true">🔁</div>
+        <div class="lp-card-title">Iterative</div>
+        <div class="lp-card-desc">Learning is structured as a feedback loop. Each cycle of test and refine deepens schema and builds metacognitive awareness.</div>
+      </div>
+      <div class="lp-card" role="listitem">
+        <div class="lp-card-icon" aria-hidden="true">🧠</div>
+        <div class="lp-card-title">Low stakes</div>
+        <div class="lp-card-desc">Psychological safety is built in. Errors are framed as information, not failure, which supports risk-taking and deeper engagement.</div>
+      </div>
+      <div class="lp-card" role="listitem">
+        <div class="lp-card-icon" aria-hidden="true">🗣️</div>
+        <div class="lp-card-title">Language first</div>
+        <div class="lp-card-desc">Clear communication is the transferable skill. Code literacy is a byproduct, not the primary objective at this level.</div>
+      </div>
+    </div>
+
+    <!-- L&D INSIGHTS PER STEP -->
+    <p style="font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--tn-teal); margin-bottom:0.75rem;">L&amp;D insight notes by step</p>
+    <div class="ld-insights">
+      <div class="ld-card">
+        <div class="ld-card-step">Step 01: Pick your idea (ADDIE: Analyze)</div>
+        <div class="ld-card-text"><strong>Intrinsic motivation</strong> is the most powerful learning driver for adolescents. Self-determination theory (Deci &amp; Ryan) tells us that when learners choose their own goals, engagement and persistence increase dramatically. The learner-choice structure in this step is intentional, not incidental.</div>
+      </div>
+      <div class="ld-card">
+        <div class="ld-card-step">Step 02: Write a strong prompt (ADDIE: Design)</div>
+        <div class="ld-card-text"><strong>Cognitive load theory</strong> (Sweller, 1988) informs the worked-example approach used here. Showing a strong and weak prompt side by side reduces extraneous load and activates schema before the learner attempts their own version. The glossary buttons address vocabulary load without interrupting the task flow.</div>
+      </div>
+      <div class="ld-card">
+        <div class="ld-card-step">Step 03: Run it (ADDIE: Develop)</div>
+        <div class="ld-card-text"><strong>Kolb's experiential learning cycle</strong> begins with concrete experience. Running the code, even broken code, is the actual learning event. The hint in this step reframes unexpected output as useful information rather than failure, which is critical for maintaining psychological safety with novice learners.</div>
+      </div>
+      <div class="ld-card">
+        <div class="ld-card-step">Step 04: Iterate (ADDIE: Implement)</div>
+        <div class="ld-card-text"><strong>Metacognition,</strong> the ability to notice what is working and what is not, is a top predictor of academic success across age groups. Each test-and-change cycle in this step is a structured metacognitive practice. Spaced repetition is also built in because the learner revisits the same project multiple times with deliberate variation.</div>
+      </div>
+      <div class="ld-card">
+        <div class="ld-card-step">Step 05: Reflect and share (ADDIE: Evaluate)</div>
+        <div class="ld-card-text"><strong>Bloom's Taxonomy</strong> places creation and evaluation at the highest cognitive levels. Asking learners to share and explain their work activates retrieval practice (Roediger &amp; Butler, 2011), which is one of the strongest memory consolidation strategies identified in cognitive science research.</div>
+      </div>
+    </div>
+
+    <!-- COGNITIVE LOAD REDUCTION -->
+    <div class="cl-strip" role="region" aria-label="Cognitive load reduction techniques">
+      <div class="cl-strip-title">Cognitive load reduction: design decisions for memory retention</div>
       <div class="cl-items">
         <div class="cl-item">
           <div class="cl-dot" aria-hidden="true"></div>
-          <div class="cl-text"><strong>One step at a time.</strong> Each section gives you one job. You do not have to hold the whole process in your head at once. This reduces extraneous cognitive load (Sweller, 1988).</div>
+          <div class="cl-text"><strong>One step at a time.</strong> Each accordion card isolates a single task. Learners do not have to hold the full process in working memory at once.</div>
         </div>
         <div class="cl-item">
           <div class="cl-dot" aria-hidden="true"></div>
-          <div class="cl-text"><strong>Examples before rules.</strong> You see a real worked example before you read a principle, so your brain has a concrete anchor before the abstract idea arrives.</div>
+          <div class="cl-text"><strong>Examples before rules.</strong> Worked examples appear before principles so the brain has a concrete anchor before an abstract idea is introduced.</div>
         </div>
         <div class="cl-item">
           <div class="cl-dot" aria-hidden="true"></div>
-          <div class="cl-text"><strong>Short chunks.</strong> Content is broken into small accordion cards so working memory is never overloaded. Open one step, close it, then move to the next.</div>
+          <div class="cl-text"><strong>Chunked content.</strong> Short cards prevent working memory overload. Open one, close it, move to the next.</div>
         </div>
         <div class="cl-item">
           <div class="cl-dot" aria-hidden="true"></div>
-          <div class="cl-text"><strong>Familiar language.</strong> No jargon appears without a plain explanation right next to it. Vocabulary load is kept low so attention stays on the skill being practiced.</div>
+          <div class="cl-text"><strong>Plain language throughout.</strong> No jargon without an inline explanation. Vocabulary load is kept low so attention stays on the skill.</div>
         </div>
         <div class="cl-item">
           <div class="cl-dot" aria-hidden="true"></div>
-          <div class="cl-text"><strong>Retrieval practice at the close.</strong> The final step asks learners to explain what they built. Recalling and articulating information is one of the strongest consolidation strategies in cognitive science (Roediger &amp; Butler, 2011).</div>
+          <div class="cl-text"><strong>Retrieval practice at close.</strong> Step 5 asks learners to explain what they built, activating recall as a consolidation strategy.</div>
         </div>
         <div class="cl-item">
           <div class="cl-dot" aria-hidden="true"></div>
-          <div class="cl-text"><strong>Spaced repetition built in.</strong> The iterate step has learners revisit the same project multiple times with small variations, which deepens long-term retention far more than a single pass through new material.</div>
+          <div class="cl-text"><strong>Spaced repetition.</strong> The iterate step revisits the same project multiple times with variation, deepening long-term retention beyond a single pass.</div>
         </div>
       </div>
     </div>
 
+    <!-- DESIGN PROCESS CARDS -->
+    <p style="font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--tn-teal); margin-bottom:0.75rem;">Design process questions (student-facing reference)</p>
     <div class="process-grid" id="process-grid" role="list" aria-label="Design process questions"></div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer role="contentinfo">
   <div class="footer-logo">
     <div class="footer-logo-mark" aria-hidden="true">T</div>
@@ -719,20 +581,24 @@
   </div>
   <div class="footer-divider" aria-hidden="true"></div>
   <div class="footer-copyright">
-    &copy; 2025 Chad L. Smith. All rights reserved. Created in partnership with Technovation.<br>
+    &copy; 2025 Chad L. Smith. All rights reserved. Created for an L&amp;D employment application with Technovation.<br>
     This resource is for educational use only. Unauthorized reproduction or redistribution is prohibited.<br>
     Technovation&#174; is a registered trademark of Technovation. Used with permission.
   </div>
 </footer>
 
 <script>
+const glossaryTerms = {
+  "Be specific": "The AI cannot read your mind. The more detail you give it, the closer it gets to what you actually pictured. Describe what it looks like, what it does, and what happens when someone uses it. Treat it like directions to your house. Vague directions get people lost.",
+  "Show an example first": "Before you try writing your own prompt, look at the good example below. Your brain learns faster when it sees a finished version first rather than starting from a blank page. Notice the structure, then copy that structure with your own idea.",
+  "Start with the main thing": "When you write your prompt, lead with the most important feature. Do not try to describe everything at once. Get the core working first, then add extras in Step 4. Building a solid base before adding features is how real apps get made."
+};
+
 const steps = [
   {
     badge: "01", bg: "#EEE9FC", fg: "#5C1AB8",
     title: "Pick your idea",
-    subtitle: "ADDIE: Analyze | Identify who you are building for and why it matters",
-    principles: ["Intrinsic motivation", "Relevance", "Autonomy"],
-    body: "The most important decision you will make is what you are building. Start small and personal. If you would actually use it, you are far more likely to finish it and learn from it.",
+    body: "The most important decision you will make is what you are building. Start small and personal. If you would actually use it, you are far more likely to finish it and enjoy the process. The best first project is not the most impressive one. It is the one that genuinely solves a small problem in your own life.",
     ideas: [
       { icon: "🎮", name: "Mini game", desc: "Catch objects, answer trivia" },
       { icon: "😌", name: "Mood tracker", desc: "Daily check-in log" },
@@ -741,57 +607,85 @@ const steps = [
       { icon: "🏆", name: "Tier list", desc: "Rank your faves" },
       { icon: "🎲", name: "Random picker", desc: "What should I eat?" },
     ],
-    tip: "<strong>L&amp;D insight (Analyze):</strong> Intrinsic motivation is the most powerful learning driver for adolescents. Self-determination theory (Deci &amp; Ryan) tells us that when learners choose their own goals, engagement and persistence increase dramatically. Pick a project that genuinely interests you. The skills transfer regardless of the topic."
+    tryThis: {
+      label: "Try this before moving on",
+      text: "Write down your idea in one sentence. Include who uses it, what it does, and why it matters to you. Example: A mood tracker that lets me log how I feel after school each day so I can see patterns over time. If you can write that sentence clearly, you are ready for Step 2."
+    },
+    hint: {
+      label: "Hint: how to choose",
+      text: "Ask yourself what small thing annoys you or would make your day easier. The best first project is something you genuinely wish existed. It does not have to be complicated. Simple and finished beats complex and abandoned every time."
+    }
   },
   {
     badge: "02", bg: "#FFF0E8", fg: "#C44F0E",
     title: "Write a strong prompt",
-    subtitle: "ADDIE: Design | Plan the experience clearly before anything gets built",
-    principles: ["Specificity", "Schema building", "Worked examples"],
-    body: "Your prompt is your blueprint. The AI can only build what you can describe clearly. A vague prompt returns a vague result. A specific, structured prompt gives you something you can actually react to and improve.",
+    body: "Your prompt is your blueprint. The AI can only build what you can describe clearly. Think of it like ordering at a restaurant. The more specific your order, the more likely you get exactly what you want. A vague prompt gives the AI too much room to guess, and its guess is probably not what you pictured.",
+    glossary: ["Be specific", "Show an example first", "Start with the main thing"],
     prompts: [
-      { label: "too vague   this will not work well", type: "bad", text: "make a game" },
-      { label: "specific and clear   this will work", type: "good", text: "Make a browser game where colorful emoji fall from the top of the screen. I click them to catch them before they hit the bottom. Each catch = 1 point. After 30 seconds, the game ends and shows my final score in big text. Use a white background with bright, cheerful colors." }
+      { label: "too vague: this will not work well", type: "bad", text: "make a game" },
+      { label: "specific and clear: this works much better", type: "good", text: "Make a browser game where colorful emoji fall from the top of the screen. I click them to catch them before they hit the bottom. Each catch = 1 point. After 30 seconds, the game ends and shows my final score in big text. Use a white background with bright, cheerful colors." }
     ],
-    tip: "<strong>L&amp;D insight (Design):</strong> Cognitive load theory (Sweller) says to reduce extraneous complexity and let learners focus on the core task. By providing a worked-example prompt first, you give your brain a pattern to follow before introducing variation. Always lead with your most important feature and add extras later."
+    tryThis: {
+      label: "Try this before moving on",
+      text: "Write your own prompt using this checklist. What does it do? What does it look like? What happens when you interact with it? What happens when it ends? If you can answer all four, your prompt is ready to send."
+    },
+    hint: {
+      label: "Hint: still stuck on what to write?",
+      text: "Start by describing your idea out loud as if you were explaining it to a friend. Then write down what you just said. Most people describe things much more clearly when they are talking than when they are typing. Use your spoken explanation as your first draft."
+    }
   },
   {
     badge: "03", bg: "#E6F9F5", fg: "#0E7A64",
     title: "Run it and see what happens",
-    subtitle: "ADDIE: Develop | Produce the first version and observe it honestly",
-    principles: ["Experiential learning", "Immediate feedback", "Psychological safety"],
-    body: "Paste the AI's code into a free online editor and hit run. It will not be perfect on the first try. That is completely normal and expected. Your only job in this step is to observe what works and what does not. Do not judge it yet. Just look.",
+    body: "Paste the AI's code into a free online editor and hit run. It will not be perfect on the first try. That is completely normal and expected. Professional developers rarely get it right on the first attempt either. Your only job right now is to observe what works and what does not. You are a tester, not a judge.",
     tools: [
       { name: "CodePen.io", url: "https://codepen.io" },
       { name: "Replit.com", url: "https://replit.com" },
       { name: "Glitch.me", url: "https://glitch.com" },
     ],
     extra: "<strong>Which coding language?</strong> Ask the AI for HTML, CSS, and JavaScript. It runs instantly in any browser with zero installs required.",
-    tip: "<strong>L&amp;D insight (Develop):</strong> Kolb's experiential learning cycle begins with a concrete experience. Running your code, even broken code, is the actual learning event. Reading about coding is not the same. The moment the screen does something unexpected is the moment real learning begins."
+    tryThis: {
+      label: "Try this while testing",
+      text: "As you run your project, make a quick list of three things. First, write down what works the way you expected. Second, write down what is broken or missing. Third, write down one thing you want to add or change. That list becomes your input for Step 4."
+    },
+    hint: {
+      label: "Hint: if something looks broken",
+      text: "Do not panic when something looks wrong. Take a note of exactly what you see and describe it to the AI. For example: the button appears but nothing happens when I click it. The more clearly you describe the problem, the faster it gets fixed. Specific beats vague every single time."
+    }
   },
   {
     badge: "04", bg: "#FFF8E0", fg: "#8A6300",
     title: "Iterate: one change at a time",
-    subtitle: "ADDIE: Implement | Deploy, test, refine, and repeat",
-    principles: ["Spaced practice", "Error correction", "Metacognition"],
-    body: "This is the heart of vibe coding. You are not done when it sort of works. You are done when it works the way you pictured it. Ask the AI to change one specific thing, test it, then ask for the next thing. Small changes are easier to trace if something breaks.",
+    body: "This is where vibe coding gets genuinely fun. You have something that runs and now you get to shape it. Ask the AI to change one specific thing, test it, then ask for the next change. The one-at-a-time rule is not just a suggestion. If five things change at once and something breaks, there is no way to know which change caused it.",
     prompts: [
       { label: "change the look", type: "example", text: "make the background dark navy and the score text bright yellow" },
       { label: "add a feature", type: "example", text: "add a 3-second countdown before the game starts" },
       { label: "fix a bug", type: "example", text: "the timer does not stop when the game ends, please fix that" }
     ],
-    tip: "<strong>L&amp;D insight (Implement):</strong> Metacognition, knowing what you know and noticing when something is off, is a top predictor of academic success. Every test cycle in this step is a metacognitive practice. You are training yourself to observe, diagnose, and act. That skill is worth more than any single piece of code."
+    tryThis: {
+      label: "Try this during iteration",
+      text: "After each change, ask yourself two questions before sending the next request. Did that change do what I expected? If yes, move to the next change. Did it break anything else? If no, move on. If it did not do what was expected, note the issue clearly and send it to the AI to fix before adding anything new."
+    },
+    hint: {
+      label: "Hint: why one change at a time matters",
+      text: "Imagine you changed five things at once and something broke. You would have no idea which change caused the problem. One change at a time means you always know exactly what worked, what did not, and why. That is not just good vibe coding. It is how real developers think too."
+    }
   },
   {
     badge: "05", bg: "#F0EAFE", fg: "#5C1AB8",
     title: "Reflect and share",
-    subtitle: "ADDIE: Evaluate | Assess the outcome and anchor the learning",
-    principles: ["Retrieval practice", "Social learning", "Transfer"],
-    body: "You built something real. Now share it and talk about it. Sharing is not showing off. It is the final step in the learning cycle. When you explain what you made, what broke, and what you would do differently, you consolidate everything that happened in your brain during the project.",
+    body: "You built something real. Now share it and collect feedback. Sharing is how professionals iterate. When you put your app in front of real people and ask what they think, you get information you could never get on your own. That feedback tells you what to improve, what is confusing, and what people actually want. Real products are not finished in one pass. They are shaped by the people who use them.",
     prompts: [
-      { label: "questions to reflect on", type: "example", text: "What was the hardest part of this project?\nWhat would I do differently if I started over?\nWhat is the next feature I would add?\nWho could actually use this app and how?" }
+      { label: "questions to reflect on", type: "example", text: "What was the hardest part of this project?\nWhat would I do differently if I started over?\nWhat is the next feature I would add?\nWho could actually use this app and why would it help them?" }
     ],
-    tip: "<strong>L&amp;D insight (Evaluate):</strong> Bloom's Taxonomy places creation and evaluation at the highest levels of thinking. When you share your project and explain your decisions, you are operating at those levels. Retrieval practice (recalling what you learned by explaining it) is also one of the strongest memory consolidation strategies in cognitive science."
+    tryThis: {
+      label: "Try this before you close the tab",
+      text: "Share your project with at least one other person and ask them three questions. What does this seem like it does? What is confusing or broken? What would make you actually use this? Take their answers and make one change at a time, exactly like you did in Step 4. This is how professional teams build software. They ship, they listen, they improve, and they repeat."
+    },
+    hint: {
+      label: "Hint: how to share it",
+      text: "CodePen and Replit both give you a shareable link the moment you save your project. Copy the URL from your browser and send it to anyone. They can open it without an account or any installs. You can also screenshot it and post it. Show what you made and say one thing you learned. That is all it takes."
+    }
   }
 ];
 
@@ -799,7 +693,7 @@ const processSteps = [
   {
     num: "01", icon: "🔍",
     title: "Who is this for?",
-    desc: "Know your user before you build anything. What do they need? What do they already know? What would make their life easier?",
+    desc: "Know your user before you build anything. What do they need? What do they already know? What would make their day easier?",
     question: "Who will use this, and what is their biggest frustration right now?",
     tag: "ADDIE: Analyze"
   },
@@ -807,13 +701,13 @@ const processSteps = [
     num: "02", icon: "💡",
     title: "What problem does it solve?",
     desc: "Every useful app solves a specific, real problem. A fuzzy problem definition almost always leads to a fuzzy product.",
-    question: "What does someone do right now when this problem comes up, and how is that frustrating?",
+    question: "What does someone do right now when this problem comes up, and why is that frustrating?",
     tag: "ADDIE: Analyze"
   },
   {
     num: "03", icon: "✏️",
     title: "What does it look like?",
-    desc: "Sketch it out on paper before you type a single prompt. Know what screens you need. A rough drawing saves hours of revision.",
+    desc: "Sketch it out on paper before you type a single prompt. Know what screens you need. A rough drawing saves hours of revision later.",
     question: "If someone could only see one screen of this app, what would it show?",
     tag: "ADDIE: Design"
   },
@@ -848,15 +742,16 @@ steps.forEach((step, i) => {
   card.className = 'step-card' + (i === 0 ? ' open' : '');
   card.setAttribute('role', 'listitem');
 
-  const principlesHTML = step.principles.map(p =>
-    `<span class="principle-tag">${p}</span>`
-  ).join('');
+  let bodyHTML = `<div class="step-body-inner"><p>${step.body}</p>`;
 
-  let bodyHTML = `
-    <div class="step-body-inner">
-      <div style="margin-bottom:0.875rem;" role="list" aria-label="Learning principles for this step">${principlesHTML}</div>
-      <p>${step.body}</p>
-  `;
+  if (step.glossary) {
+    bodyHTML += `<div class="glossary-row" role="list" aria-label="Key tips: click each one to learn more">`;
+    step.glossary.forEach(term => {
+      const def = glossaryTerms[term] || '';
+      bodyHTML += `<button class="glossary-btn" role="listitem" aria-label="${term}: click for tip" onclick="toggleGlossary(this)" aria-expanded="false">${term}<span class="glossary-popup" role="tooltip">${def}</span></button>`;
+    });
+    bodyHTML += `</div><p style="font-size:12px; color:var(--tn-gray); margin-top:-0.5rem; margin-bottom:1rem;">Click each tip to expand it. Click again to close it.</p>`;
+  }
 
   if (step.ideas) {
     bodyHTML += `<div class="idea-grid" role="list" aria-label="Project idea options">`;
@@ -880,6 +775,7 @@ steps.forEach((step, i) => {
   }
 
   if (step.tools) {
+    bodyHTML += `<p style="font-size:14px; font-weight:600; color:var(--tn-dark); margin-bottom:0.5rem;">Paste your code into one of these free tools:</p>`;
     bodyHTML += `<div class="tool-pills" role="list" aria-label="Free coding tools">`;
     step.tools.forEach(t => {
       bodyHTML += `<a href="${t.url}" target="_blank" rel="noopener noreferrer" class="tool-pill" role="listitem" aria-label="Open ${t.name} in a new tab">${t.name} &#x2197;</a>`;
@@ -891,8 +787,18 @@ steps.forEach((step, i) => {
     bodyHTML += `<p style="font-size:13px; color:#374151; margin-top:0.5rem;">${step.extra}</p>`;
   }
 
-  if (step.tip) {
-    bodyHTML += `<div class="tip-bar" role="note">${step.tip}</div>`;
+  if (step.hint) {
+    bodyHTML += `<div class="hint-box" role="note">
+      <div class="hint-box-label">${step.hint.label}</div>
+      <p>${step.hint.text}</p>
+    </div>`;
+  }
+
+  if (step.tryThis) {
+    bodyHTML += `<div class="try-box" role="note">
+      <div class="try-box-label">${step.tryThis.label}</div>
+      <p>${step.tryThis.text}</p>
+    </div>`;
   }
 
   bodyHTML += `</div>`;
@@ -903,7 +809,6 @@ steps.forEach((step, i) => {
       <div class="step-badge" style="background:${step.bg}; color:${step.fg};" aria-hidden="true">${step.badge}</div>
       <div class="step-info">
         <div class="step-title">${step.title}</div>
-        <div class="step-subtitle">${step.subtitle}</div>
       </div>
       <div class="step-toggle" aria-hidden="true">+</div>
     </div>
@@ -911,7 +816,6 @@ steps.forEach((step, i) => {
   `;
 
   const header = card.querySelector('.step-header');
-
   const toggle = () => {
     const isOpen = card.classList.contains('open');
     document.querySelectorAll('.step-card').forEach(c => {
@@ -923,13 +827,33 @@ steps.forEach((step, i) => {
       header.setAttribute('aria-expanded', 'true');
     }
   };
-
   header.addEventListener('click', toggle);
   header.addEventListener('keydown', e => {
     if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
   });
 
   stepsEl.appendChild(card);
+});
+
+// Glossary toggle: only one open at a time
+function toggleGlossary(btn) {
+  const isActive = btn.classList.contains('active');
+  document.querySelectorAll('.glossary-btn.active').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-expanded', 'false');
+  });
+  if (!isActive) {
+    btn.classList.add('active');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+document.addEventListener('click', e => {
+  if (!e.target.closest('.glossary-btn')) {
+    document.querySelectorAll('.glossary-btn.active').forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-expanded', 'false');
+    });
+  }
 });
 
 // Render process cards
