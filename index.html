@@ -297,9 +297,15 @@
   .process-card-icon { font-size: 32px; margin-bottom: 0.75rem; }
   .process-card-title { font-size: 1rem; font-weight: 700; color: white; margin-bottom: 0.5rem; }
   .process-card-desc { font-size: 13px; color: rgba(255,255,255,0.60); line-height: 1.6; }
-  .process-card-question { margin-top: 0.875rem; padding-top: 0.875rem; border-top: 1px solid rgba(255,255,255,0.12); font-size: 12px; font-style: italic; color: var(--tn-yellow); line-height: 1.5; }
+  .process-card-question { margin-top: 0.875rem; padding-top: 0.875rem; border-top: 1px solid rgba(255,255,255,0.12); font-size: 12px; font-style: italic; color: var(--tn-yellow); line-height: 1.5; margin-bottom: 0.75rem; }
   .process-card-tag { display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.65); padding: 3px 8px; border-radius: 4px; margin-top: 0.5rem; }
   .process-card.ada-card { border-color: var(--tn-teal); background: rgba(0,184,156,0.10); }
+
+  /* BLOOM'S BADGE */
+  .bloom-badge { margin-top: 0.875rem; padding-top: 0.875rem; border-top: 2px solid; }
+  .bloom-verb { font-size: 16px; font-weight: 800; letter-spacing: 0.01em; margin-bottom: 3px; }
+  .bloom-meta { font-size: 10px; font-weight: 700; color: rgba(255,255,255,0.45); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 6px; }
+  .bloom-why { font-size: 12px; color: rgba(255,255,255,0.50); line-height: 1.55; font-style: italic; }
 
   /* FOOTER */
   footer { background: var(--tn-dark); padding: 2.5rem 2rem; text-align: center; }
@@ -431,7 +437,7 @@
     <div class="how-card" role="listitem">
       <div class="how-card-icon" aria-hidden="true">🔧</div>
       <div class="how-card-title">You improve it</div>
-      <div class="how-card-desc">Tell the AI what to changee. Repeat until it looks and works the way you pictured it.</div>
+      <div class="how-card-desc">Tell the AI what to change. Repeat until it looks and works the way you pictured it.</div>
     </div>
   </div>
 </section>
@@ -506,7 +512,7 @@
         </div>
         <div class="addie-map-row">
           <div class="addie-map-phase" style="background:#9D174D;">Evaluate</div>
-          <div class="addie-map-desc"><strong>Formative and summative evaluation design.</strong> Formative evaluation is embedded throughout the instruction. The Try This checkpoints in each step function as informal performance checks that allow learners to self-assess readiness before advancing. The reflection prompts in Step 5 serve as a summative activity, asking learners to articulate what they built, what failed, and what they would changee. A formal evaluation cycle would add learner observation sessions during piloting, task completion rate tracking, and a post-activity rubric scored against the stated performance objectives.</div>
+          <div class="addie-map-desc"><strong>Formative and summative evaluation design.</strong> Formative evaluation is embedded throughout the instruction. The Try This checkpoints in each step function as informal performance checks that allow learners to self-assess readiness before advancing. The reflection prompts in Step 5 serve as a summative activity, asking learners to articulate what they built, what failed, and what they would change. A formal evaluation cycle would add learner observation sessions during piloting, task completion rate tracking, and a post-activity rubric scored against the stated performance objectives.</div>
         </div>
       </div>
     </div>
@@ -553,7 +559,7 @@
       </div>
       <div class="ld-card">
         <div class="ld-card-step">Step 04: Iterate (ADDIE: Implement)</div>
-        <div class="ld-card-text"><strong>Metacognition,</strong> the ability to notice what is working and what is not, is a top predictor of academic success across age groups. Each test-and-changee cycle in this step is a structured metacognitive practice. Spaced repetition is also built in because the learner revisits the same project multiple times with deliberate variation.</div>
+        <div class="ld-card-text"><strong>Metacognition,</strong> the ability to notice what is working and what is not, is a top predictor of academic success across age groups. Each test-and-change cycle in this step is a structured metacognitive practice. Spaced repetition is also built in because the learner revisits the same project multiple times with deliberate variation.</div>
       </div>
       <div class="ld-card">
         <div class="ld-card-step">Step 05: Reflect and share (ADDIE: Evaluate)</div>
@@ -680,7 +686,7 @@ const steps = [
     extra: "<strong>Which coding language?</strong> Ask the AI for HTML, CSS, and JavaScript. It runs instantly in any browser with zero installs required.",
     tryThis: {
       label: "Try this while testing",
-      text: "As you run your project, make a quick list of three things. First, write down what works the way you expected. Second, write down what is broken or missing. Third, write down one thing you want to add or changee. That list becomes your input for Step 4."
+      text: "As you run your project, make a quick list of three things. First, write down what works the way you expected. Second, write down what is broken or missing. Third, write down one thing you want to add or change. That list becomes your input for Step 4."
     },
     hint: {
       label: "Hint: if something looks broken",
@@ -689,20 +695,20 @@ const steps = [
   },
   {
     badge: "04", bg: "#FFF8E0", fg: "#8A6300",
-    title: "Iterate: one changee at a time",
-    body: "This is where vibe coding gets genuinely fun. You have something that runs and now you get to shape it. Ask the AI to changee one specific thing, test it, then ask for the next changee. The one-at-a-time rule is not just a suggestion. If five things changee at once and something breaks, there is no way to know which changee caused it.",
+    title: "Iterate: one change at a time",
+    body: "This is where vibe coding gets genuinely fun. You have something that runs and now you get to shape it. Ask the AI to change one specific thing, test it, then ask for the next change. The one-at-a-time rule is not just a suggestion. If five things change at once and something breaks, there is no way to know which change caused it.",
     prompts: [
-      { label: "changee the look", type: "example", text: "make the background dark navy and the score text bright yellow" },
+      { label: "change the look", type: "example", text: "make the background dark navy and the score text bright yellow" },
       { label: "add a feature", type: "example", text: "add a 3-second countdown before the game starts" },
       { label: "fix a bug", type: "example", text: "the timer does not stop when the game ends, please fix that" }
     ],
     tryThis: {
       label: "Try this during iteration",
-      text: "After each changee, ask yourself two questions before sending the next request. Did that changee do what I expected? If yes, move to the next changee. Did it break anything else? If no, move on. If it did not do what was expected, note the issue clearly and send it to the AI to fix before adding anything new."
+      text: "After each change, ask yourself two questions before sending the next request. Did that change do what I expected? If yes, move to the next change. Did it break anything else? If no, move on. If it did not do what was expected, note the issue clearly and send it to the AI to fix before adding anything new."
     },
     hint: {
-      label: "Hint: why one changee at a time matters",
-      text: "Imagine you changeed five things at once and something broke. You would have no idea which changee caused the problem. One changee at a time means you always know exactly what worked, what did not, and why. That is not just good vibe coding. It is how real developers think too."
+      label: "Hint: why one change at a time matters",
+      text: "Imagine you changed five things at once and something broke. You would have no idea which change caused the problem. One change at a time means you always know exactly what worked, what did not, and why. That is not just good vibe coding. It is how real developers think too."
     }
   },
   {
@@ -714,7 +720,7 @@ const steps = [
     ],
     tryThis: {
       label: "Try this before you close the tab",
-      text: "Share your project with at least one other person and ask them three questions. What does this seem like it does? What is confusing or broken? What would make you actually use this? Take their answers and make one changee at a time, exactly like you did in Step 4. This is how professional teams build software. They ship, they listen, they improve, and they repeat."
+      text: "Share your project with at least one other person and ask them three questions. What does this seem like it does? What is confusing or broken? What would make you actually use this? Take their answers and make one change at a time, exactly like you did in Step 4. This is how professional teams build software. They ship, they listen, they improve, and they repeat."
     },
     hint: {
       label: "Hint: how to share it",
@@ -723,41 +729,53 @@ const steps = [
   }
 ];
 
+const bloomColors = ["#6B7280","#2563EB","#059669","#D97706","#DC2626","#7C3AED"];
+
 const processSteps = [
   {
     num: "01", icon: "🔍",
     title: "Who is this for?",
     desc: "Know your user before you build anything. What do they need? What do they already know? What would make their day easier?",
     question: "Who will use this, and what is their biggest frustration right now?",
-    tag: "ADDIE: Analyze"
+    bloom: "Identify", bloomLevel: 1, bloomName: "Remember",
+    bloomDesc: "Recalling who the audience is activates prior knowledge and sets the foundation for every decision that follows.",
+    skill: "Cognitive"
   },
   {
     num: "02", icon: "💡",
     title: "What problem does it solve?",
     desc: "Every useful app solves a specific, real problem. A fuzzy problem definition almost always leads to a fuzzy product.",
     question: "What does someone do right now when this problem comes up, and why is that frustrating?",
-    tag: "ADDIE: Analyze"
+    bloom: "Explain", bloomLevel: 2, bloomName: "Understand",
+    bloomDesc: "Explaining why a problem exists requires the learner to interpret cause and effect, not just name the issue.",
+    skill: "Cognitive"
   },
   {
     num: "03", icon: "✏️",
     title: "What does it look like?",
     desc: "Sketch it out on paper before you type a single prompt. Know what screens you need. A rough drawing saves hours of revision later.",
     question: "If someone could only see one screen of this app, what would it show?",
-    tag: "ADDIE: Design"
+    bloom: "Sketch", bloomLevel: 3, bloomName: "Apply",
+    bloomDesc: "Producing a visual layout requires the learner to use their understanding and translate it into a concrete form.",
+    skill: "Psychomotor"
   },
   {
     num: "04", icon: "⚙️",
     title: "What does it do?",
     desc: "List every feature, then cut it down to only the must-haves for version one. Simpler is almost always better to start.",
     question: "What is the single thing this app must do to be worth opening?",
-    tag: "ADDIE: Design + Develop"
+    bloom: "Prioritize", bloomLevel: 4, bloomName: "Analyze",
+    bloomDesc: "Cutting a feature list to its essentials requires the learner to break down options and judge relative importance.",
+    skill: "Cognitive"
   },
   {
     num: "05", icon: "♿",
     title: "Who might be left out?",
     desc: "ADA and WCAG accessibility standards are not just legal requirements. They are good design. Ask: can someone who uses a screen reader use this? Can a colorblind user read it? Does every button have a clear label? Can a keyboard-only user navigate it?",
-    question: "What would need to changee so that a student with a visual, motor, or cognitive disability could use this fully?",
-    tag: "ADA / WCAG 2.1",
+    question: "What would need to change so that a student with a visual, motor, or cognitive disability could use this fully?",
+    bloom: "Evaluate", bloomLevel: 5, bloomName: "Evaluate",
+    bloomDesc: "Judging whether a design meets an accessibility standard requires applying external criteria to make a defended decision.",
+    skill: "Affective",
     ada: true
   },
   {
@@ -765,7 +783,9 @@ const processSteps = [
     title: "How do you know it worked?",
     desc: "Define what success looks like before you build. A clear target is the only way to know when you are done and what to improve.",
     question: "How would I test whether this actually solves the problem for a real person?",
-    tag: "ADDIE: Evaluate"
+    bloom: "Design", bloomLevel: 6, bloomName: "Create",
+    bloomDesc: "Building a success measure from scratch requires the learner to generate a new plan, the highest level of cognitive skill.",
+    skill: "Cognitive"
   }
 ];
 
@@ -906,13 +926,18 @@ processSteps.forEach(p => {
   const card = document.createElement('div');
   card.className = 'process-card' + (p.ada ? ' ada-card' : '');
   card.setAttribute('role', 'listitem');
+  const color = bloomColors[p.bloomLevel - 1];
   card.innerHTML = `
     <div class="process-card-num">Step ${p.num}</div>
     <div class="process-card-icon" aria-hidden="true">${p.icon}</div>
     <div class="process-card-title">${p.title}</div>
     <div class="process-card-desc">${p.desc}</div>
     <div class="process-card-question" aria-label="Design question">${p.question}</div>
-    <div class="process-card-tag">${p.tag}</div>
+    <div class="bloom-badge" style="border-color:${color};" aria-label="Bloom's Taxonomy level ${p.bloomLevel}">
+      <div class="bloom-verb" style="color:${color};">${p.bloom}</div>
+      <div class="bloom-meta">Bloom's Level ${p.bloomLevel} &bull; ${p.bloomName} &bull; ${p.skill}</div>
+      <div class="bloom-why">${p.bloomDesc}</div>
+    </div>
   `;
   processEl.appendChild(card);
 });// PDF download: build a hidden printable version and trigger window.print
@@ -927,7 +952,6 @@ function downloadQuickRef() {
       <div class="pdf-card-title">${p.title}</div>
       <div class="pdf-card-desc">${p.desc}</div>
       <div class="pdf-card-q">${p.question}</div>
-      <div class="pdf-card-tag">${p.tag}</div>
     </div>
   `).join('');
 
